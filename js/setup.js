@@ -70,7 +70,7 @@ var renderWizard = function (wizard) {
  */
 var fillFragment = function () {
   var fragment = document.createDocumentFragment();
-  for (var i = 0; i < 4; i++) {
+  for (i = 0; i < 4; i++) {
     fragment.appendChild(renderWizard(wizards[i]));
   }
 
