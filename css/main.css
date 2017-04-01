@@ -729,9 +729,10 @@ input[type=radio]:checked + .review-mark-label {
 
 .setup-similar-label {
   margin: 5px;
-
+  width: 140px;
+  word-wrap: normal;
+  -ms-word-wrap: normal;
   color: #fff;
-
 }
 
 .setup-similar-content {
