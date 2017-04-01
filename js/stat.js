@@ -18,13 +18,11 @@ window.renderStatistics = function (ctx, names, times) {
   ctx.fillText('Список результатов:', 120, 60);
   // определение максимального времени и индекса для него
   var max = -1;
-  var maxIndex = -1;
 
   for (var i = 0; i < times.length; i++) {
     var time = times[i];
     if (time > max) {
       max = time;
-      maxIndex = i;
     }
   }
   // отрисовка гистограммы
@@ -37,7 +35,7 @@ window.renderStatistics = function (ctx, names, times) {
   var initialY = 240; // стартовая позиция по оси Y
 
   ctx.textBaseline = 'top'; // рисуем текст от левого верхнего угла
-  for (var i = 0; i < times.length; i++) {
+  for (i = 0; i < times.length; i++) {
     if (names[i] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     } else {
